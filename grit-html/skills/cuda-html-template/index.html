@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Learning About "Skill"  </title>
+		
+		
+		<!--Bootstrap  CSS-->
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<!--Main Style CSS-->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<!--Font Style CSS-->
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'> 
+		<!-- Modernizr Javascript /-->
+		<!-- <script src="./js/modernizr-2.6.2.min.js"></script>  -->
+		<!-- <script src="./js/jquery.isotope.min.js" type="text/javascript"></script> -->
+		<!--Bootstrap JS-->
+		<!-- <script src="./js/bootstrap.min.js" type="text/javascript"></script> -->
+		<!--js library-->
+	
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="about"></div>
+		<div id="team"></div>
+		<div id="portfolio"></div>
+		<div id="skill"></div>
+		<div id="divide"></div>
+		<div id="contact"></div>
+		<div id="footer"></div>
+
+
+		
+	
+		<!-- jQuery File -->
+		<script src="./js/jquery-1.10.1.min.js" type="text/javascript"></script>
+			
+		
+		<script> 
+			$(function(){
+			  $("#header").load("_partials/header.html"); 
+			  $("#about").load("_partials/about.html"); 
+			  $("#team").load("_partials/team.html"); 
+			  $("#portfolio").load("_partials/portfolio.html"); 
+			  $("#skill").load("_partials/skill.html"); 
+			  $("#divide").load("_partials/divide.html"); 
+			  $("#contact").load("_partials/contact.html"); 
+			  $("#footer").load("_partials/footer.html"); 
+			  load_js();
+			});
+
+			function load_js()
+			{
+			   var head= document.getElementsByTagName('head')[0];
+			   var script= document.createElement('script');
+			   script.src= './js/jquery-1.10.1.min.js';
+			   head.appendChild(script);
+			   script= document.createElement('script');
+			   script.src= './js/main.js';
+			   head.appendChild(script);
+			   
+			}
+		</script>
+
+		
+		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		chromium.org/developers/how-tos/chrome-frame-getting-started -->
+		<!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+		1. Take a look at sample site
+		2. Understand each section of the page (Identifying basic terminology)
+		3. Insert Skill as content in Title Element and update the Favicon path to point to your skills Favicon
+		2. Add Header information
+		3. Uncomment Each Of The JS Code
+	</body>
+</html>

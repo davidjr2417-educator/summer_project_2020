@@ -1,0 +1,212 @@
+<style>
+    html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #337cac;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.all-clear:hover {
+  background-color: #f17377;
+}
+
+.equal-sign {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+  height: 100%;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+.equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.display-labels{
+ 
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 10px 20px 0px;
+  
+}
+.display-labels input{
+    border:0px;
+    padding:5px;
+      font-size:24px;
+}
+.display-labels input:first-child {
+  
+  
+  text-align:right;
+
+}
+
+
+</style><div class="calculator">
+
+    <input id="calc-screen" type="text" class="calculator-screen" value="" maxlength="10" disabled />
+     <div class="display-labels">
+          <input id="calc-prev-screen" type="text" class="calculator-num-display" value="" disabled />
+        <input id="calc-op-screen" type="text" class="calculator-operator-display"value="" disabled />  
+    </div>
+  
+    <div class="calculator-keys">
+   
+    
+      <button id="add" type="button" class="operator" value="+">+</button>
+      <button id="sub" type="button" class="operator" value="-">-</button>
+      <button id="mult" type="button" class="operator" value="*">&times;</button>
+      <button id="divide" type="button" class="operator" value="/">&divide;</button>
+  
+      <button id="btn_7" type="button" value="7">7</button>
+      <button id="btn_8" type="button" value="8">8</button>
+      <button id="btn_9" type="button" value="9">9</button>
+  
+  
+      <button id="btn_4" type="button" value="4">4</button>
+      <button id="btn_5" type="button" value="5">5</button>
+      <button id="btn_6" type="button" value="6">6</button>
+  
+  
+      <button id="btn_1" type="button" value="1">1</button>
+      <button id="btn_2" type="button" value="2">2</button>
+      <button id="btn_3" type="button" value="3">3</button>
+  
+  
+      <button id="btn_0" type="button" value="0">0</button>
+      <button id="btn_10"  type="button" class="decimal" value=".">.</button>
+      <button id="all_clear" type="button" class="all-clear" value="all-clear">AC</button>
+  
+      <button id="equals"  type="button" class="equal-sign operator" value="=">=</button>
+  
+    </div>
+  </div>
+  <script>
+      document.getElementById("btn_0").addEventListener("click", btn_Clicked);
+document.getElementById("btn_1").addEventListener("click", btn_Clicked);
+document.getElementById("btn_2").addEventListener("click", btn_Clicked);
+document.getElementById("btn_3").addEventListener("click", btn_Clicked);
+document.getElementById("btn_4").addEventListener("click", btn_Clicked);
+document.getElementById("btn_5").addEventListener("click", btn_Clicked);
+document.getElementById("btn_6").addEventListener("click", btn_Clicked);
+document.getElementById("btn_7").addEventListener("click", btn_Clicked);
+document.getElementById("btn_8").addEventListener("click", btn_Clicked);
+document.getElementById("btn_9").addEventListener("click", btn_Clicked);
+document.getElementById("btn_10").addEventListener("click", btn_Clicked);
+
+document.getElementById("add").addEventListener("click", operator_Clicked);
+document.getElementById("sub").addEventListener("click", operator_Clicked);
+document.getElementById("mult").addEventListener("click", operator_Clicked);
+document.getElementById("divide").addEventListener("click", operator_Clicked);
+document.getElementById("equals").addEventListener("click", equals_Clicked);
+document.getElementById("all_clear").addEventListener("click", clear_Clicked);
+
+
+function clear_Clicked(){
+document.getElementById("calc-screen").value ="";
+}
+function btn_Clicked(){
+	if(this.value != "." || !document.getElementById("calc-screen").value.includes("."))
+  {
+    document.getElementById("calc-screen").value = 	document.getElementById("calc-screen").value+ this.value;
+  }
+}
+
+function operator_Clicked(){
+document.getElementById("calc-op-screen").value = this.value;
+document.getElementById("calc-prev-screen").value =  document.getElementById("calc-screen").value;
+document.getElementById("calc-screen").value ="";
+}
+
+
+function equals_Clicked(){
+ var fn = document.getElementById("calc-prev-screen").value;
+ var sn =document.getElementById("calc-screen").value ;
+ var r = 0;
+ 
+
+            if (document.getElementById("calc-op-screen").value  == "+")
+            {
+                r = fn + sn;
+            }
+            else if (document.getElementById("calc-op-screen").value  == "-")
+            {
+                r = fn - sn;
+
+            }
+            else if (document.getElementById("calc-op-screen").value == "*")
+            {
+                r = fn * sn;
+            }
+            else if (document.getElementById("calc-op-screen").value  == "/")
+            {
+                r = fn / sn;
+            }
+            else
+            {
+                //error
+            }
+           document.getElementById("calc-screen").value = parseFloat(r) ;
+           document.getElementById("calc-prev-screen").value ="";
+					document.getElementById("calc-op-screen").value ="" ;
+}
+  </script>
