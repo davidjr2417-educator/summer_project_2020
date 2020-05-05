@@ -297,7 +297,7 @@ input, select {
 }
 /*=======slug========*/
 #genius-header .genius-slug {
-	padding: 100px 0 100px 0px;
+	padding: 200px 0 200px 0px;
 }
 #genius-header .genius-slug h1 {
 	text-align: center;
@@ -332,7 +332,7 @@ input, select {
 .genius-slug h1,
 .genius-slug button{
 	z-index: 2;
-	color:maroon;
+	color:maroon !important;
 	font-weight:600;
 }
 #genius-header .genius-button {

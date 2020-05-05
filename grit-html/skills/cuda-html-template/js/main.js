@@ -74,6 +74,7 @@ Built on top of the jQuery library (http://jquery.com)
 Inspired by: http://dribbble.com/shots/631074-Simple-Pie-Charts-II?list=popular&offset=210
 Thanks to Philip Thrasher for the jquery plugin boilerplate for coffee script
 */
+$(document).ready(function() {
 (function($) {
   $.easyPieChart = function(el, options) {
     var addScaleLine, animateLine, drawLine, easeInOutQuad, rAF, renderBackground, renderScale, renderTrack,
@@ -1101,4 +1102,4 @@ jQuery(document).ready(function ($){
       $(this).delay(150).animate({opacity:1,right:"0px"},1000);
     }); 
   });
- 
+}); 
