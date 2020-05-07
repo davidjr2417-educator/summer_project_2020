@@ -297,7 +297,7 @@ input, select {
 }
 /*=======slug========*/
 #genius-header .genius-slug {
-	padding: 200px 0 200px 0px;
+	padding: 25px 0 ;
 }
 #genius-header .genius-slug h1 {
 	text-align: center;
@@ -341,7 +341,7 @@ input, select {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 100px;
 	padding: 18px 105px;
 	border-bottom: 5px solid #c86a43;
 	background: #eb7d4d;
@@ -361,7 +361,7 @@ input, select {
 ===============================*/
 .genius-service-bg {
 	background: #17c2a4;
-	padding: 110px 0px 110px 0;
+	padding: 75px 0px 75px 0;
 	color: #fff;
 }
 #genius-service .genius-item img {
@@ -384,9 +384,9 @@ input, select {
 	text-align: center;
 }
 #genius-service .genius-item {
-	padding: 60px 12px 12px 0;
+	padding: 30px 12px 12px 0;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 #genius-service .genius-first-iteam, #genius-service .genius-second-iteam, #genius-service .genius-third-iteam, #genius-service .genius-fourth-iteam {
 	margin-bottom: 30px;
@@ -534,29 +534,29 @@ input, select {
 
 /* -Portfolio
 ================================ */
-.genius-portfolio-bg {
+.genius-technology-bg {
 	background: #ffdd99;
 	padding-top: 110px;
 	padding-bottom: 110px;
 	text-align: center;
 }
-#genius-portfolio h1 {
+#genius-technology h1 {
 	color: #393939;
 }
-#genius-portfolio .genius-line {
+#genius-technology .genius-line {
 	background: #e5c37f;
 }
-.genius-portfolio-isotop-menu {
+.genius-technology-isotop-menu {
 	padding-top: 30px;
 }
-#genius-portfolio .genius-menu {
+#genius-technology .genius-menu {
 	display: inline-block;
 	list-style: none;
 }
-#genius-portfolio .genius-menu li {
+#genius-technology .genius-menu li {
 	float: left;
 }
-#genius-portfolio .genius-menu li {
+#genius-technology .genius-menu li {
 	background: #ebc985;
 	padding: 2px 14px;
 	margin-right: 5px;
@@ -564,27 +564,27 @@ input, select {
 	text-transform: uppercase;
 	border-radius: 4px;
 }
-#genius-portfolio .genius-menu li:hover {
+#genius-technology .genius-menu li:hover {
 	text-decoration: none;
 }
 
-#genius-portfolio .genius-portfolio-item {
+#genius-technology .genius-technology-item {
 	margin-top: 50px;
 }
-#genius-portfolio .genius-portfolio-item li {
+#genius-technology .genius-technology-item li {
 	display: block;
 	padding-bottom: 30px;
 	color: #222;
 }
-#genius-portfolio .genius-portfolio-item h3 {
+#genius-technology .genius-technology-item h3 {
 	color: #222;
 }
-#genius-portfolio .genius-button {
+#genius-technology .genius-button {
 	background: #17c2a4;
 	border-bottom: 5px solid #14a58c;
 	color: #fff;
 }
-#genius-portfolio .genius-button:hover {
+#genius-technology .genius-button:hover {
 	background: #87509c;
 	border-bottom: 5px solid #4F076B;
 }
@@ -880,4 +880,25 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 .definition-item{
 	margin: 0 auto;
 	float: none;
+}
+ img.img-responsive{
+	max-width:100%;
+	max-height:100%;
+}
+@media only screen and (min-width: 976px) {
+	.genius-technology-item img.img-responsive{
+		width:500px;
+		height:250px;
+	}
+ }
+ 
+ 
+
+	   html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }

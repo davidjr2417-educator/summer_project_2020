@@ -1,0 +1,14 @@
+@media only screen and (max-width: 100px) {
+    
+  #genius-service .genius-item img{
+        height:auto !important;
+}
+}
+
+
+@media only screen and (max-width: 576px)  {
+    .nav-btn-container{
+      flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    }
+ }

@@ -1,93 +1,113 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/header.css">
 
 
-<header id="genius-header">
-    <div class="navigation-wrap bg-dark start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-dark">
-                        <div class="genius-logo element_from_left">
-                            <a class="navbar-brand" href="https://themeforest.net/user/ig_design/portfolio" target="_blank">
-                                <img src="../images/placeholder.png" alt="">
-                            </a>	
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#">Portfolio</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#">Agency</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#">Journal</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </nav>		
-                </div>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="row" style="width:100%">
+        <div class="col-5 col-md-2 col-xl-1 nav-img-container">
+            <img class="img-responsive" src="http://localhost:8000/images/placeholder.png"/>
+          </div>
+          <div class="nav-btn-container">
+            <button class="navbar-toggler" style="float:right;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>        
+        
+       
+        <div class="col-sm-12 col-md-10 col-xl-11" >
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0  w-100 justify-content-end nav-list">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  CS Skills
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Problem Solving</a></li>
+                  <li><a class="dropdown-item" href="#">Critical Thinking</a></li>
+            
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#genius-service">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Life
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                  <li><a class="dropdown-item" href="#genius-about-us">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#genius-our-community">Our Community</a></li>
+            
+                </ul>
+              </li>
+             
+                <li class="nav-item">
+                  <a class="nav-link" href="#genius-technology">Techonlogy</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Divide
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                    <li><a class="dropdown-item" href="#genius-skill">Digital Divide</a></li>
+                    <li><a class="dropdown-item" href="#genius-divide-stats">Divide Stats</a></li>
+                    <li><a class="dropdown-item" href="#genius-bridge-divide">Bridging Divide</a></li>
+              
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#genius-touch">Contact</a>
+              </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="genius-slug">
-        <div class="container">
-            <span>
-                  <!-- ***************************
-                    Update The Content In The Heading 1 Elememnt [h1] 
-                    With Your Computer Science Skill    
-                    ******************************-->
-                    <h1>MY COMPUTER SCIENCE SKILL</h1>
-            </span>
-            <button type="button" class="genius-button btn btn-default element_from_bottom">WORK WITH US!</button>
+        </nav>
+        <header id="genius-header">
+      <div class="genius-slug">
+          <div class="container genius-header-container">
+              
+                    <!-- ***************************
+                      Update The Content In The Heading 1 Elememnt [h1] 
+                      With Your Computer Science Skill    
+                      ******************************-->
+                      <h1>MY COMPUTER SCIENCE SKILL</h1>
+
+              
+              
+              <button type="button" class="genius-button btn btn-default element_from_bottom">WORK WITH US!</button>
+            </div>     
             <!-- /.genius-button -->
         </div>
     </div>
 </header>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 
 <script>
 
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+  if (!$(this).next().hasClass('show')) {
+    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+  }
+  var $subMenu = $(this).next(".dropdown-menu");
+  $subMenu.toggleClass('show');
 
 
-	//Menu On Hover
-		
-	$('body').on('mouseenter mouseleave','.nav-item',function(e){
-			if ($(window).width() > 750) {
-				var _d=$(e.target).closest('.nav-item');_d.addClass('show');
-				setTimeout(function(){
-				_d[_d.is(':hover')?'addClass':'removeClass']('show');
-				},1);
-			}
-	});	
-	
+  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+    $('.dropdown-submenu .show').removeClass("show");
+  });
+
+
+  return false;
+});
 	
 </script>
 </body>
